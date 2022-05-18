@@ -1,6 +1,8 @@
 module.exports = {
   // Home Page
-  HOME_TITLE: "Mascaras",
+  HOME_TITLE: "Sold Masks",
   HOME_SUBTITLE:
-    "Grafico de mascaras vendidas en mercadolibre durante la pandemia",
+    "This graphic shows number of mask sold per day in Argentina, before and during COVID19 pandemic",
+  HOME_INFO: "Data obtained through MercadoLibre API",
+  HOME_FOOTER_CREDITS: "Made by @OmniboyOK",
 };

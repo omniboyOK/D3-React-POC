@@ -1,10 +1,17 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import LineChart from "./components/LineChart/LineChart";
-import { HOME_SUBTITLE, HOME_TITLE } from "./constants/strings";
+import {
+  HOME_FOOTER_CREDITS,
+  HOME_INFO,
+  HOME_SUBTITLE,
+  HOME_TITLE,
+} from "./constants/strings";
 import { facemaskData } from "./data/mockData";
 import useWindowDimensions from "./hooks/useDimensions";
 import styled from "styled-components";
+import Footer from "./components/Footer/Footer";
+import Info from "./components/Info/Info";
 
 const Container = styled.div`
   min-height: 100vh;
@@ -31,6 +38,8 @@ function App() {
           data={[facemaskData]}
           margins={margins}
         />
+        <Info text={HOME_INFO} />
+        <Footer credits={HOME_FOOTER_CREDITS} />
       </Container>
     </div>
   );

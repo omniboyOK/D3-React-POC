@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
 `;
 
 const Header = ({ title, subtitle }) => (
-  <StyledHeader className="App-header">
+  <StyledHeader>
     <h1>{title}</h1>
     <h3>{subtitle}</h3>
   </StyledHeader>
