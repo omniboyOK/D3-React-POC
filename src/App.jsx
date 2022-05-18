@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import LineChart from "./components/LineChart/LineChart";
-import { facemaskData, portfolioData } from "./data/mockData";
+import { facemaskData } from "./data/mockData";
 import useWindowDimensions from "./hooks/useDimensions";
 
 function App() {
