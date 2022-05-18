@@ -1,8 +1,16 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import LineChart from "./components/LineChart/LineChart";
+import { HOME_SUBTITLE, HOME_TITLE } from "./constants/strings";
 import { facemaskData } from "./data/mockData";
 import useWindowDimensions from "./hooks/useDimensions";
+import styled from "styled-components";
+
+const Container = styled.div`
+  min-height: 100vh;
+  background-color: #282c34;
+  padding: 1em;
+`;
 
 function App() {
   const { width, height } = useWindowDimensions();
@@ -16,14 +24,14 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
-        <Header />
+      <Container>
+        <Header title={HOME_TITLE} subtitle={HOME_SUBTITLE} />
         <LineChart
           dimensions={{ width: width * 0.8, height: height / 2 }}
           data={[facemaskData]}
           margins={margins}
         />
-      </div>
+      </Container>
     </div>
   );
 }
